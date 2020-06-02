@@ -4,13 +4,16 @@
 //
 //  Created by Ricardo Avila on 6/1/20.
 //  Copyright © 2020 Ricardo Avila. All rights reserved.
-//
+//  Sorry about the messy code
 
 import SwiftUI
 
+
+// This represents the main page, all it should show is Select Language
 struct ContentView: View {
     var body: some View {
         NavigationView {
+            // This button allows us to navigate through different windows
             NavigationLink(destination: SelectLanguage()){
                 Text("Select Language")
                 .fontWeight(.semibold)
@@ -25,7 +28,7 @@ struct ContentView: View {
     }
 }
 
-
+// Select Language window
 struct SelectLanguage: View {
     var body: some View {
         NavigationView {
